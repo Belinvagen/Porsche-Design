@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="fonts\fonts.css">
+	<meta charset="utf-8">
+	<title>Porsche Design</title>
+	<style>
+			/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+		p{
+			transform: scale(.9, 1);
+		}
+
+		a{
+			transform: scale(.9, 1);
+		}
+
+		a:hover{
+			color: white;
+		}
+
+		.box-container{
+			width: 1526px;
+			height: 2350px;
+			background: white;
+			font-family: kanit;
+		}
+
+		.box-header{
+			width: 100%;
+			height: 2.75%;
+			background: white;
+		}
+
+		.img-logo{
+			width: 353px;
+			height: 23px;
+			margin-top: 21px;
+			margin-left: 38.4%;
+		}
+
+		.box-main{
+			width: 100%;
+			height: 607px;
+			background-image: url(img/bg.webp);
+			background-size: 100%;
+			padding-top: 84px;
+		}
+
+		.box-welcome{
+			position: relative;
+			width: 881px;
+			height: 463px;
+			background: white;
+			opacity: 75%;
+			padding-top: 60px;
+			margin-top: -460px;
+			z-index: -1;
+			display: flex;	
+		}
+
+		.box-welcome-title{
+		font-family: kanit;
+		font-weight: 100;
+		font-size: 45px;
+		letter-spacing: 5px;
+		text-align: justify-all;
+		margin-left: 10px;
+		margin-top: -10px;
+		line-height: 50px;
+		}
+
+		.box-welcome-select{
+			font-family: kanit;
+			font-size: 20px;
+			letter-spacing: 0px;
+			margin-left: 10px;
+			margin-top: -20px;
+		}
+
+		.select-title{
+			margin-left: 15px;
+			font-size: 15px;
+			font-family: kanit;
+		}
+
+		.box-dropdown{
+			margin-top: 15px;
+		}
+
+		.dropdown{
+			margin-left: 55px;
+			width: 776px;
+			border: none;
+			background: transparent;
+			color: #24292a;
+		}
+
+		.button-select{
+			margin-left: 50px;
+			margin-top: 10px;
+			font-family: sans-serif;
+			font-size: 9px;
+			font-weight: 700;
+			letter-spacing: 1px;
+			background: black ;
+			opacity: 100%;
+			color: white;
+			text-transform: uppercase;
+			width: 781px;
+			height: 60px;
+		}
+
+		.box-welcome-not-transparent{
+			width: 881px;
+			height: 463px;
+			background: transparent;
+			margin-left: 101px;
+			position: relative;
+			z-index: 2;
+			margin-top: 60px;
+		}
+
+		.box-advantages{
+			display: flex;
+			background: white;
+			height: 210px;
+		}
+
+		.advantage{
+			padding-top: 2.2%;
+			height: 100%;
+			width: 28.5%;
+			margin-left: 3.7%;
+		}
+
+		.text-advantage{
+			font-family: kanit;
+			font-size: 23px;
+			margin-left: 41px;
+		}
+
+		.box-footer{
+			height: 769px;
+			margin: 0;
+			background: black;
+		}
+
+		.box-footer-options{
+			position: absolute;
+			display: flex;
+			margin-top: 60px;
+			margin-left: 140px;
+			width: 80%;
+			height: 370px;
+		}
+
+		.footer-options-title{
+			color: white;
+			font-weight: 700;
+			font-size: 14px;
+			margin-top: 35px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+
+		.footer-links{
+			color: #505051;
+			text-transform: uppercase;
+			font-family: roboto;
+			text-decoration: none;
+			line-height: 27px;
+			font-size: 14px;
+			display: block;
+			color: darkgray;
+		}
+
+		.payment-logo{
+			height: 25px;
+			margin-top: 3px;
+		}
+
+		.feedback{
+			margin-top: 5px;
+			height: 35px;
+			width: 238px;
+			font-family: roboto;
+		}
+
+		.feedback::placeholder{
+			opacity: 90%;
+			padding-left: 10px;
+		}
+
+		.button-feedback{
+			background: white;
+			border: 1px solid black;
+			border-left: none;
+			height: 40px;
+			width: 38px;
+			position: absolute;
+			margin-top: -40px;
+			margin-left: 210px;
+		}
+
+		.footer-logo{
+			margin-top: 93px;
+			margin-left: 648px;
+		}
+
+		.footer-logo-image{
+			width: 230px;
+		}
+
+		.footer-icon{
+			width: 25px;
+			margin-left: 12px;
+		}
+
+		.footer-post{
+			color: #888;
+			transform: scale(1.0);
+			font-family: roboto;
+			text-transform: uppercase;
+			font-weight: 700;
+			line-height: 20px;
+			font-size: 10px;
+		}
+
+		.box-product{
+			height: 500px;
+			width: 24.8%;
+			margin-left: 0.3%;
+			border: 1px solid #888;
+		}
+
+		.product-img{
+			width: 100%;
+		}
+
+		.product-name{
+			font-family: roboto;
+			font-size: 14px;
+			font-weight: 900;
+			text-transform: uppercase;
+			margin-left: 20px;
+			width: 160px;	
+		}
+
+		.product-price{
+			font-family: roboto;
+			font-weight: bolder;
+			width: 70px;
+			font-weight: 16px;
+			margin-top: -32px;
+			margin-left: auto;
+		}
+	</style>
+</head>
+<body style="margin: 0;">
+
+
+
+
+
+
+	<div class="box-container">
+		
+		<div class="box-header">
+			<img src="img/logo.svg" class="img-logo">
+		</div>
+
+		<div class="box-main">
+
+			<div class="box-welcome-not-transparent">
+
+				<div class="box-welcome-title">
+					<p>Welcome to the World of Porsche Design</p>
+				</div>
+
+				<p class = "box-welcome-select">Please select your region and language</p>
+
+				<div class="box-region-language">
+
+					<div class="select-title">
+						<p>Region</p>
+				    </div>
+
+					<div class="box-dropdown">
+						<select class="dropdown">
+							<option class="regions">Canada</option>
+							<option class="regions">Germany / EU</option>
+							<option class="regions">Great Britain</option>
+							<option class="regions">Switzerland</option>
+							<option class="regions">USA</option>
+						</select>
+					</div>
+
+					<hr align="center" width="781px" size="2" color="black" />
+
+					<p class="select-title">Language</p>
+
+					<div class="box-dropdown">
+						<select class="dropdown">
+							<option class="regions">English</option>
+						</select>
+					</div>
+
+					<hr align="center" width="781px" size="2" color="black" />
+
+					<button class="button-select">select ❯</button>
+				</div>
+
+				<div class="box-welcome">
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="box-advantages">
+				
+				<div class="advantage">
+					<hr align="center" width="80%" size="2" color="black" />
+					<p class="text-advantage">Premium express delivery<br>within 48 hours</p>
+					<img src="img\usp.png" style="position: absolute; margin-left: 360px; margin-top: -87px; width: 32px;">
+				</div>
+
+				<div class="advantage">
+					<hr align="center" width="80%" size="2" color="black" />
+					<p class="text-advantage">Variety of payment options</p>
+					<img src="img\stuff.png" style="position: absolute; margin-left: 360px; margin-top: -55px; width: 32px;">
+				</div>
+
+				<div class="advantage">
+					<hr align="center" width="80%" size="2" color="black" />
+					<p class="text-advantage">Individual customer support<br>Monday - Friday: 9 am - 6 <br>pm</p>
+					<img src="img\support.png" style="position: absolute; margin-left: 360px; margin-top: -130px; width: 32px;">
+				</div>
+
+		</div>
+
+
+
+
+		<div class="box-footer">
+
+
+			<div class="box-footer-options">
+				<div style="width: 15%; text-transform: uppercase; font-family: sans-serif;">
+					<p class="footer-options-title">service & help</p>
+					<br>
+					<a href="https://youtu.be/dQw4w9WgXcQ" class="footer-links">contact</a>
+					<a href="https://youtu.be/dQw4w9WgXcQ" class="footer-links">faq</a>
+					<a href="https://youtu.be/dQw4w9WgXcQ" class="footer-links">payment and delivery</a>
+					<a href="https://youtu.be/dQw4w9WgXcQ" class="footer-links">information</a>
+					<a href="https://youtu.be/dQw4w9WgXcQ" class="footer-links">service & warranty</a>
+					<a href="https://youtu.be/dQw4w9WgXcQ" class="footer-links">store locator</a>
+				</div>
+
+				<div style="width: 16%; margin-left: 6%; text-transform: uppercase; font-family: sans-serif;">
+					<p class="footer-options-title">LEGAL</p>
+					<br>
+					<a href="https://youtu.be/dQw4w9WgXcQ" class="footer-links">terms & conditions</a>
+					<a href="https://youtu.be/dQw4w9WgXcQ" class="footer-links">privacy policy and cookie</a>
+					<a href="https://youtu.be/dQw4w9WgXcQ" class="footer-links">settings</a>
+					<a href="https://youtu.be/dQw4w9WgXcQ" class="footer-links">imprint</a>
+					<a href="https://youtu.be/dQw4w9WgXcQ" class="footer-links">whistleblower system</a>
+					<a href="https://youtu.be/dQw4w9WgXcQ" class="footer-links">human rights</a>
+				</div>
+
+				<div style="width: 13.5%; margin-left: 4%; text-transform: uppercase; font-family: sans-serif;">
+					<p class="footer-options-title">PORSCHE DESIGN</p>
+					<br>
+					<a href="https://youtu.be/dQw4w9WgXcQ" class="footer-links">press</a>
+					<a href="https://youtu.be/dQw4w9WgXcQ" class="footer-links">porsche lifestyle</a>
+					<a href="https://youtu.be/dQw4w9WgXcQ" class="footer-links">studio f.a.porsche</a>
+					<a href="https://youtu.be/dQw4w9WgXcQ" class="footer-links">timepieces ag</a>
+					<a href="https://youtu.be/dQw4w9WgXcQ" class="footer-links">porsche design tower</a>
+				</div>
+
+				<div style="width: 5.5%; margin-left: 7%; text-transform: uppercase; font-family: sans-serif;">
+					<p class="footer-options-title">PAYMENT</p>
+					<br>
+					<img src="img\mastercard.png" class="payment-logo" style="margin-left: 2px;">
+					<img src="img\visa.png" class="payment-logo" style="margin-left: 0px;">
+					<img src="img\amex.png" class="payment-logo" style="height: 30px; margin-left: 4px;">
+					<img src="img\paypal.png" class="payment-logo" style="margin-left: 8px;">
+					<img src="img\klarna.png" class="payment-logo" style="margin-left: 6px;">
+					<img src="img\alipay.png" class="payment-logo" style="height: 20px; margin-left: 6px;">
+				</div>
+
+				<div style="width: 18.4%; margin-left: 14.6%; font-family: sans-serif;">
+					<p class="footer-options-title" style="margin-left: -12px;">NEWSLETTER</p>
+					<input type="email" name="" placeholder="Your e-mail adress" class="feedback">
+					<button class="button-feedback">❯</button>
+					<p class="footer-options-title" style="margin-left: -12px; margin-top: 78px;">need help?</p>
+					<div style="margin-top: 35px;"><a href="https://youtu.be/dQw4w9WgXcQ" style="color: white; text-decoration: none; font-family: roboto; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 25px;">+49 711 911 75550 (outside Germany)</a></div>
+					<div><a href="https://youtu.be/dQw4w9WgXcQ"style="color: white; text-decoration: none; font-family: roboto; font-weight: 500; font-size: 14px; letter-spacing: 1px; line-height: 25px; text-decoration: underline;">contact@porsche-design.de</a></div>
+					<p style="font-family: kanit; font-size: 15px; color: #888; font-weight: 100; line-height: 10px; margin-left: -12px;">Mon - Fri: 9am - 6pm</p>
+					<p style="font-family: kanit; font-size: 15px; color: #888; font-weight: 100; line-height: 10px; margin-left: -12px;">Sat - Sun: closed</p>
+				</div>	
+			</div>
+			<a href="https://youtu.be/dQw4w9WgXcQ"><img src="https://cdn.monsido.com/page-assist/v2/assets/img/uaccess.svg" style="width:36px; margin-top: 478.5px; margin-left: 154px;"></a>
+
+			<div class="footer-logo">
+				<img src="https://www.porsche-design.com/Images/Icons/porsche-design-logo-white.svg" class="footer-logo-image">
+			</div>
+
+			<div style="border-top: 1px solid white; margin-top: 50px; width: 1325px; margin-left: auto; margin-right: auto; display: flex; padding-top: 35px;">
+				<div style="display: flex; margin-top:-10px">
+					<img src="img\network-icon.png" style="width:15px; height: 15px; margin-top: 12px; margin-right: 6px;">
+					<p class="footer-post">germany / eu (english)</p>
+					<img src="img\pin-icon.png" style="width:15px; height: 15px; margin-top: 12px; margin-right: 6px; margin-left: 15px;">
+					<p class="footer-post">find stores</p>
+				</div>
+				<div>
+					<p style="color: #888;transform: scale(1.0);font-family: roboto;font-weight: 700;font-size: 10px; margin-left: 318px; margin-top: 1px;">2023, PORSCHE DESIGN ALL RIGHTS RESERVED</p>
+				</div>
+				<div style="margin-left: auto;">
+					<img src="img\fb-icon.png" class="footer-icon">
+					<img src="img\ig-icon.png" class="footer-icon" style="width: 18px;">
+					<img src="img\twitter-icon.png" class="footer-icon" style="width: 17px;">
+				</div>
+			</div>
+		</div>
+
+		<div style="margin-left: 100px; height: 590px; width: 1330px; padding: 0; background:">
+			<p style="font-family: kanit; font-size: 25px; font-weight: 500; letter-spacing: 3px; color: white; margin-left: -70px;">PRODUCTS FOR PEOPLE WHO ARE DRIVEN BY DREAMS.</p>
+			<div style="display: flex; background: white;">
+
+
+				<div class="box-product" style="margin-left: 0;">
+					<img src="img\sunglasses.webp" class="product-img">
+					<div class="product-name">
+						<p>Sunglasses P´8965</p>
+					</div>
+					<div class="product-price"><p>380,00 €</p></div>
+				</div>
+
+
+				<div class="box-product">
+					<img src="img\wallet.webp" class="product-img">
+					<div class="product-name">
+						<p>Business Billfold 10</p>
+					</div>
+					<div class="product-price"><p>300,00 €</p></div>
+				</div>
+
+
+				<div class="box-product">
+					<img src="img\watch.webp" class="product-img">
+					<div class="product-name">
+						<p>CHRONOGRAPH 1</p>
+					</div>
+					<div class="product-price"><p>9000,00 €</p></div>
+				</div>
+
+
+				<div class="box-product">
+					<img src="img\sneakers.webp" class="product-img">
+					<div class="product-name">
+						<p>Xetic Sculpt Sneaker</p>
+					</div>
+					<div class="product-price"><p>460,00 €</p></div>
+				</div>
+
+
+			</div>
+		</div>
+
+	</div>
+
+	
+
+
+
+
+
+
+</body>
+</html>

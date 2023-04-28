@@ -1,0 +1,13 @@
+@font-face{
+	font-family: kanit;
+	src: url(Kanit-ExtraLight.ttf);
+	src: url(Kanit-Light.ttf);
+	src: url(Kanit-Thin.ttf);
+	src: url(Kanit-Medium.ttf);
+}
+
+@font-face{
+	font-family: roboto;
+	src: url(Roboto-Regular.ttf);
+}
+
